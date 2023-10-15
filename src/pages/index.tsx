@@ -25,7 +25,7 @@ const Home = ({ json }: InferGetServerSidePropsType<GetServerSideProps>) => {
         h1 {
           text-transform: uppercase;
           font-size: 42px;
-          padding: 25px 40px;
+          padding: 35px 40px;
           font-weight: 800;
         }
         .bookListContainer {
