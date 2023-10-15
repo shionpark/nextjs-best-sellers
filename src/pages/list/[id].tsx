@@ -23,7 +23,7 @@ export default function Page() {
 
   return (
     <div className="wrap">
-      <h1>{id}</h1>
+      <h1 className="title">{id}</h1>
       <div className="bookContainer">
         {data?.books?.map((book: IBook, idx) => (
           <div className="bookItem" key={idx}>
@@ -47,13 +47,6 @@ export default function Page() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-        }
-        h1 {
-          text-transform: uppercase;
-          font-size: 42px;
-          padding: 35px 40px;
-          font-weight: 800;
-          text-align: center;
         }
         .bookContainer {
           display: grid;

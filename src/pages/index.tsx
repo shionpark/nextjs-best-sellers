@@ -7,7 +7,7 @@ const Home = ({ json }: InferGetServerSidePropsType<GetServerSideProps>) => {
   // console.log(json.results);
   return (
     <div className="container">
-      <h1>The New York Times Best Seller Explorer</h1>
+      <h1 className="title">The New York Times Best Seller Explorer</h1>
       <div className="bookListContainer">
         {json?.results?.map((book: IListProps) => (
           <Link
@@ -22,12 +22,6 @@ const Home = ({ json }: InferGetServerSidePropsType<GetServerSideProps>) => {
         ))}
       </div>
       <style jsx>{`
-        h1 {
-          text-transform: uppercase;
-          font-size: 42px;
-          padding: 35px 40px;
-          font-weight: 800;
-        }
         .bookListContainer {
           display: flex;
           flex-wrap: wrap;
